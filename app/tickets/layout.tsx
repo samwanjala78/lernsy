@@ -24,7 +24,7 @@ export default function TicketsLayout({
 
     return (
         <div className="relative flex flex-col w-full gap-8">
-            <SpacedRow>
+            <div className="grid grid-cols-2 gap-4 w-full md:w-64">
                 <RoundedCard className="sm:w-1/2 lg:w-32 h-32">
                     <a>
                         <SpacedColumn className="items-center">
@@ -41,7 +41,7 @@ export default function TicketsLayout({
                         </SpacedColumn>
                     </a>
                 </RoundedCard>
-            </SpacedRow>
+            </div>
 
             <nav className="w-full text-white flex items-center">
                 <ul className="flex space-x-4">

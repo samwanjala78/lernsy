@@ -5,7 +5,7 @@ import { ShoppingBag } from "lucide-react";
 export default function Following() {
     return (
         <Center>
-            <SpacedRow>
+            <SpacedRow className="w-screen sm:w-auto" justify="justify-center">
                 <Icon icon={ShoppingBag} iconSize="w-15 h-15" />
                 <SpacedColumn>
                     <span className="text-2xl">Merchandise</span>
