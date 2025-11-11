@@ -7,7 +7,8 @@ export default function Home() {
 
   const categories = [
     "Arts & Theatre",
-    "Events"
+    "Events",
+    "Cinema"
   ];
 
   const items = [
