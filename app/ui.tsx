@@ -134,7 +134,8 @@ export function Sidebar({ toggleSideBar, isSidebarOpen }: { toggleSideBar: (valu
     return (
         <div
             ref={sidebarRef}
-            className={`w-24 h-screen fixed top-0 z-10 text-white bg-black ${isSidebarOpen ? "flex" : "hidden"} lg:flex flex-col py-4`}>
+            className={`w-24 h-screen fixed top-0 z-10 text-white bg-black transform transition-transform duration-300 ease-in-out
+    ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0 flex flex-col py-4`}>
             <div className={`flex justify-center items-center`}>
                 <div className="relative w-10 h-10 cursor-pointer">
                     <Image
