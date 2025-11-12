@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import { Button, fadedTextColor, Icon, RoundedCard, SpacedColumn, SpacedRow } from "./ui";
+import { Button, fadedTextColor, Icon, RoundedCard, SpacedColumn, SpacedRow, VerticalSpacer } from "./ui";
 import { MapPin, Ticket } from "lucide-react";
 
 export default function Home() {
@@ -25,6 +25,7 @@ export default function Home() {
           return <Button key={category} className="w-auto bg-white/90 text-black">{category}</Button>
         })}
       </div>
+      <VerticalSpacer/>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
         {items.map((item) => {
           return (
