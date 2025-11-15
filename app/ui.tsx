@@ -77,7 +77,7 @@ export function HorizontalSpacer() {
 }
 
 export function Searchbar({ className, placeholder }: { className?: string, placeholder: string }) {
-    return (<SpacedRow gap="0" className={`w-full md:w-1/2 lg:text-base text-sm ${className}`}>
+    return (<SpacedRow gap="0" className={`w-full sm:w-1/2 lg:text-base text-sm ${className}`}>
         <div className="w-auto flex justify-center items-center h-10 bg-neutral-800 border-1 py-1 px-3 rounded-l-full border-gray-800 text-white placeholder-gray-500">
             <Icon icon={Search} />
         </div>
@@ -135,7 +135,7 @@ export function Sidebar({ toggleSideBar, isSidebarOpen }: { toggleSideBar: (valu
         <div
             ref={sidebarRef}
             className={`w-24 h-screen fixed top-0 z-10 text-white bg-black transform transition-transform duration-300 ease-in-out
-    ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0 flex flex-col py-4`}>
+    ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} sm:translate-x-0 flex flex-col py-4`}>
             <div className={`flex justify-center items-center`}>
                 <div className="relative w-10 h-10 cursor-pointer">
                     <Image
@@ -208,7 +208,7 @@ function RenderContent({ toggleSideBar }: { toggleSideBar: () => void }) {
             >
                 <Icon icon={Menu} className="w-6 h-6 text-white" />
             </button>
-            <Searchbar className="lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2" placeholder="Search for Artists, Organizations, Users" />
+            <Searchbar className="sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2" placeholder="Search for Artists, Organizations, Users" />
         </div>,
         <nav key="saved" className="w-full text-white flex items-center gap-1">
             <button
@@ -247,7 +247,7 @@ function RenderContent({ toggleSideBar }: { toggleSideBar: () => void }) {
                 <Icon icon={Menu} className="w-6 h-6 text-white" />
             </button>
             <span className="text-2xl hidden sm:block font-semibold">Trailers</span>
-            <Searchbar className="lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2" placeholder="Search Trailers" />
+            <Searchbar className="sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2" placeholder="Search Trailers" />
         </div>
     ];
 
